@@ -1,0 +1,44 @@
+{
+  "changelogDate": "20231219140504",
+  "entityTableName": "bloodpressure",
+  "fields": [
+    {
+      "fieldName": "systolic",
+      "fieldType": "Integer",
+      "fieldValidateRules": ["min"],
+      "fieldValidateRulesMin": "0"
+    },
+    {
+      "fieldName": "diastolic",
+      "fieldType": "Integer",
+      "fieldValidateRules": ["min"],
+      "fieldValidateRulesMin": 0
+    },
+    {
+      "fieldName": "pulse",
+      "fieldType": "Integer",
+      "fieldValidateRules": ["min"],
+      "fieldValidateRulesMin": 0
+    },
+    {
+      "fieldName": "recorded_at",
+      "fieldType": "String"
+    }
+  ],
+  "name": "Bloodpressure",
+  "pagination": "pagination",
+  "readOnly": false,
+  "relationships": [
+    {
+      "otherEntityField": "id",
+      "otherEntityName": "patient",
+      "otherEntityRelationshipName": "bloodpressure",
+      "relationshipName": "patient",
+      "relationshipSide": "left",
+      "relationshipType": "many-to-one",
+      "relationshipValidateRules": []
+    }
+  ],
+  "searchEngine": "no",
+  "service": "no"
+}

@@ -1,0 +1,35 @@
+{
+  "changelogDate": "20231219134728",
+  "entityTableName": "patient",
+  "fields": [
+    {
+      "fieldName": "name",
+      "fieldType": "String",
+      "fieldValidateRules": []
+    },
+    {
+      "fieldName": "age",
+      "fieldType": "Integer",
+      "fieldValidateRules": []
+    },
+    {
+      "fieldName": "gender",
+      "fieldType": "String"
+    },
+    {
+      "fieldName": "health",
+      "fieldType": "String"
+    },
+    {
+      "fieldName": "geo",
+      "fieldType": "String",
+      "fieldValidateRules": []
+    }
+  ],
+  "name": "Patient",
+  "pagination": "pagination",
+  "readOnly": false,
+  "relationships": [],
+  "searchEngine": "no",
+  "service": "no"
+}
